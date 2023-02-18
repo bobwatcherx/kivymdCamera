@@ -1,0 +1,28 @@
+<Homescreen>:
+    MDScrollView:
+        do_scroll_x:False
+        do_scroll_y:True
+        MDBoxLayout:
+            id:mybox
+            orientation: 'vertical'
+            size_hint_y: 0.9
+            pos_hint:{"center_y":0.8}
+            padding:10
+            spacing:10
+            Camera:
+                id:camera
+                resolution:(640,480)
+                play:True
+            MDTextField:
+                id:name
+                hint_text:"youname"
+                font_size: 30
+            MDRaisedButton:
+                text:"capture"
+                on_release:root.captureyouface()
+            MDList:
+                id:resultbox
+           
+
+
+
